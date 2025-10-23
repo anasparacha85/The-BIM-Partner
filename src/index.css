@@ -1,0 +1,11 @@
+@import "tailwindcss";
+.dark-gray{
+  background-color: rgb(47, 45, 45);
+}
+.input-gray{
+  background-color: rgb(20, 19, 19);
+  border-color:rgb(20, 19, 19);
+}
+.orangered{
+  background-color: rgb(250, 188, 72);
+}
