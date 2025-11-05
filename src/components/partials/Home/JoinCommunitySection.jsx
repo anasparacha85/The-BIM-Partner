@@ -16,10 +16,10 @@ const JoinCommunity = () => {
         {/* Left Content */}
         <div className="text-white md:mt-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-             Join The BIM Partner Community
+             Join Your BIM Partner Community
           </h2>
           <p className="text-lg md:text-xl mb-8 leading-relaxed">
-           Stay connected with the future of construction. At <span className="text-orange-400 font-semibold">The BIM Partner</span>, 
+           Stay connected with the future of construction. At <span className="text-orange-400 font-semibold">Your BIM Partner</span>, 
             we bring together engineers, architects, and innovators who are shaping tomorrow’s 
             projects with BIM technology. Subscribe to get the latest updates, insights, 
             and opportunities in digital construction.

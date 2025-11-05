@@ -5,6 +5,9 @@ import TheBIMPartner from "/public/LOGO_The BIM Partner.jpg";
 
 const navLinks = [
   { name: "Home", path: "/" },
+  { name: "About Us", path: "/about" },
+   { name: "BIM Training", path: "/bim-training" },
+  { name: "BIM Staffing", path: "/bim-staffing" },
   {
     name: "Our Services",
     path: "/services",
@@ -18,12 +21,12 @@ const navLinks = [
           { name: "BIM Secondment & Resource Augmentation", path: "/services/bim-secondment-services" },
     ],
   },
+   { name: "Blogs", path: "/blogs" },
   { name: "Career", path: "/career" },
-  { name: "Contact Us", path: "/contact" },
-  { name: "Blogs", path: "/blogs" },
-  { name: "About Us", path: "/about" },
-  { name: "BIM Training", path: "/training" },
-  { name: "BIM Staffing", path: "/staffing" },
+  { name: "Contact Us", path: "/contact-us" },
+ 
+  
+ 
 ];
 
 const Navbar = () => {
@@ -59,22 +62,36 @@ const Navbar = () => {
         <div className="flex items-center text-gray-600">
           <MapPin className="w-4 h-4 text-orange-500 mr-2" />
           <div>
-            <div className="font-semibold">NO. 12 JULIUS AVE,</div>
-            <div>North Ryde, Australia.</div>
+            <div className="font-semibold">Mantri Commercio Tower-A,</div>
+            <div>Bengaluru, India.</div>
           </div>
         </div>
         <div className="flex items-center text-gray-600">
           <Clock className="w-4 h-4 text-orange-500 mr-2" />
           <div>
-            <div className="font-semibold">MONDAY-FRIDAY: 9AM TO 5PM</div>
-            <div>Saturday / Sunday: Closed</div>
+            <div className="font-semibold">Monday to Sat: 9 AM to 6 PM</div>
+            <div>Sunday: Closed</div>
           </div>
         </div>
         <div className="flex items-center text-gray-600">
           <Phone className="w-4 h-4 text-orange-500 mr-2" />
           <div>
-            <div className="font-semibold">+(528) 456-7592</div>
-            <div>info@example.com</div>
+            <div className="font-semibold">
+<a 
+  href="tel:+917022894585" 
+  className="hover:underline hover:text-orange-400 transition-colors"
+>
+  +91-7022894585
+</a></div>
+           <div>
+  <a 
+    href="mailto:info@yourbimpartner.com" 
+    className="hover:underline hover:text-gray-500 transition-colors"
+  >
+    info@yourbimpartner.com
+  </a>
+</div>
+
           </div>
         </div>
         <button

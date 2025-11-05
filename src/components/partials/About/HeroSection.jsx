@@ -29,7 +29,7 @@ const HeroSection = () => {
             </div>
             
             <p className="text-gray-600 text-sm leading-relaxed">
-              At The BIM Partner, we take immense pride in leading the provider of cutting-edge BIM modelling services and CAD drawing solutions. With a legacy spanning 15 years, we have consistently delivered excellence to a diverse clientele nationally and internationally.
+              At Your BIM Partner, we take immense pride in leading the provider of cutting-edge BIM modelling services and CAD drawing solutions. With a legacy spanning 15 years, we have consistently delivered excellence to a diverse clientele nationally and internationally.
 
 
 Our core expertise lies in a wide array of services, including as-built surveys utilizing state-of-the-art 3D laser scanning, precision BIM modelling, and meticulous 2D and 3D drawing services. We understand the critical role of accurate and detailed design documentation in construction and engineering projects. Hence, our dedicated team of experienced engineers, designers, and BIM modelers are committed to delivering nothing short of excellence.

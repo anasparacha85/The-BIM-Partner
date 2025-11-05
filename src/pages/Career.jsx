@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, Settings } from 'lucide-react';
+import React from 'react';
 import WeAreHiringSection from '../components/partials/career/WeAreHiring';
 import OpenedPositionsSection from '../components/partials/career/OpenPositionSection';
 
-
-// Main Career Page
 const CareerPage = () => {
   return (
     <div className="min-h-screen bg-white">
@@ -22,7 +19,21 @@ const CareerPage = () => {
         </div>
       </div>
 
+      {/* Sections */}
       <WeAreHiringSection />
+
+      {/* Embedded Job Application Form */}
+      <div className="max-w-7xl mx-auto px-4 my-12">
+        <iframe
+          src="https://techie-soft.com/system/job-application-form/eyJpdiI6ImVGQTRuTitkWW4zSUs1Y0trWlBWc1E9PSIsInZhbHVlIjoiblQ3M2pRNFp6TERWejJUMjJpT1lQUT09IiwibWFjIjoiYTc4ZTlmMDVlNWE0MTk5OTYzODE3NDdhNTU3MjdmNzQ1YmIwMjliZTQxZjdmZDllNWNjOTU2YzRiMTQyNjc1ZCIsInRhZyI6IiJ9"
+          width="100%"
+          height="750"
+          style={{ overflow: 'hidden', border: 'none' }}
+          frameBorder="0"
+          title="Job Application Form"
+        ></iframe>
+      </div>
+
       <OpenedPositionsSection />
     </div>
   );

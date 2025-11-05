@@ -22,7 +22,7 @@ const WeAreHiringSection = () => {
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
           }`}>
           <p className="text-gray-600 text-lg leading-relaxed">
-  Join <span className="font-bold text-orange-500">The BIM Partner</span>'s team of digital 
+  Join <span className="font-bold text-orange-500">Your BIM Partner</span>'s team of digital 
   construction innovators. We're looking for passionate and skilled professionals 
   to help shape the future of the built environment through Building Information 
   Modeling. Whether you're a BIM modeler, coordinator, project manager, or a 
@@ -32,7 +32,7 @@ const WeAreHiringSection = () => {
 
 <p className="text-gray-600 text-lg leading-relaxed">
   Our workplace fosters innovation, collaboration, and continuous growth. At 
-  <span className="font-bold  text-orange-500"> The BIM Partner</span>, you’ll work on 3D modeling, clash 
+  <span className="font-bold  text-orange-500"> Your BIM Partner</span>, you’ll work on 3D modeling, clash 
   detection, 4D scheduling, quantity take-offs, and digital twin integration—making 
   a real impact on how projects are designed, delivered, and maintained.
 </p>

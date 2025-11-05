@@ -54,7 +54,7 @@ const features = [
               }`}
             >
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Welcome to <span className='text-orange-500'>The BIM Partner's</span> Solutions
+                Welcome to <span className='text-orange-500'>Your BIM Partner's</span> Solutions
               </h2>
               <p className="text-gray-600 text-lg mb-6 leading-relaxed">
                 Your Trusted Partner in Digital Construction & Smart Engineering

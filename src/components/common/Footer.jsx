@@ -22,11 +22,17 @@ export default function Footer() {
         <div>
           <div className="flex items-center mb-4 ">
             <span className="text-2xl font-bold text-gray-800">
-              <img src={TheBIMPartner} alt="The BIM Partner" width={200} />
+             <img 
+  src={TheBIMPartner} 
+  alt="Your BIM Partner" 
+  className="" 
+  width={200} 
+/>
+
             </span>
           </div>
           <p className="text-[16px] mb-4 leading-6">
-            At <span className="text-white font-semibold">The BIM Partner</span>, we empower businesses 
+            At <span className="text-white font-semibold">Your BIM Partner</span>, we empower businesses 
             with cutting-edge BIM solutions to transform construction efficiency and success.
           </p>
           <div className="flex items-center space-x-3 mt-8">
@@ -59,15 +65,27 @@ export default function Footer() {
           <ul className="space-y-5 text-[16px]">
             <li className="flex items-start space-x-4">
               <MapPin className="text-orange-500" size={16} />
-              <span>NO. 12 JULIUS AVE, <br /> North Ryde, Australia.</span>
+              <span>Mantri Commercio Tower-A, <br /> Bengaluru, India.</span>
             </li>
             <li className="flex items-center space-x-2">
               <Phone className="text-orange-500" size={16} />
-              <span>+(528) 456-7592</span>
+              <span>
+<a 
+  href="tel:+917022894585" 
+  className="hover:underline hover:text-orange-400 transition-colors"
+>
+  +91-7022894585
+</a>
+</span>
             </li>
             <li className="flex items-center space-x-2">
               <Mail className="text-orange-500" size={16} />
-              <span>info@example.com</span>
+              <span> <a 
+    href="mailto:info@yourbimpartner.com" 
+    className="hover:underline hover:text-gray-200 transition-colors"
+  >
+    info@yourbimpartner.com
+  </a></span>
             </li>
             <li className="flex items-center space-x-2">
               <Clock className="text-orange-500" size={16} />
@@ -79,7 +97,7 @@ export default function Footer() {
         {/* Subscribe */}
         <div>
           <h2 className="text-white font-semibold mb-4">SUBSCRIBE</h2>
-          <p className="text-[16px] mb-4">Get exclusive BIM insights & news delivered by The BIM Partner</p>
+          <p className="text-[16px] mb-4">Get exclusive BIM insights & news delivered by Your BIM Partner</p>
           <div className="flex flex-col space-y-3">
             <input
               type="email"
@@ -94,7 +112,7 @@ export default function Footer() {
       {/* Bottom */}
       <div className="border-t border-gray-700 mt-10 pt-5 text-[16px] text-gray-400 text-start">
         <p>
-          Copyrights © 2025 <span className="text-orange-500">The BIM Partner</span>. 
+          Copyrights © 2025 <span className="text-orange-500">Your BIM Partner</span>. 
        
         </p>
       </div>

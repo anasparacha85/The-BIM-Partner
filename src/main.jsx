@@ -18,15 +18,15 @@ const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
     <Route index element={<Home1/>}/>
-     <Route path='/contact' element={<Contact/>}/>
+     <Route path='/contact-us' element={<Contact/>}/>
       <Route path='/services' element={<ServicesPage/>}/>
          <Route path='/services/:slug' element={<ServiceDetails/>}/>
           <Route path="/blogs/:slug" element={<Blogs />} />
         {/* default route */}
         <Route path="/blogs" element={<Blogs />} />
           <Route path='/about' element={<AboutUsPage/>}/>
-            <Route path='/training' element={<BimTraining/>}/>
-               <Route path='/staffing' element={<BIMStaffingPage/>}/>
+            <Route path='/bim-training' element={<BimTraining/>}/>
+               <Route path='/bim-staffing' element={<BIMStaffingPage/>}/>
               <Route path='/career' element={<CareerPage/>}/>
         <Route path='*' element={<NotFoundPage/>}/>
     </Route>
