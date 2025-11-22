@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
+import SEO from '../components/SEO';
 import services from '../data/servicesData';
 import { Link, useNavigate } from 'react-router-dom';
 
 const ServicesPage = () => {
   const [activeService, setActiveService] = useState(0);
   const navigate=useNavigate()
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "BIM Services",
+    "url": "https://yourbimpartner.com/services",
+    "description": "Comprehensive BIM services including modeling, clash detection, 4D/5D BIM, and more."
+  };
 
 //  const services = [
 //     {
@@ -53,6 +62,13 @@ const ServicesPage = () => {
 
   return (
     <div className="min-h-screen ">
+      <SEO 
+        title="Our BIM Services | Professional Solutions for Construction"
+        description="Explore our comprehensive BIM services including 3D modeling, clash detection, 4D/5D BIM, and facility management solutions."
+        keywords="BIM services, 3D modeling, clash detection, BIM coordination, construction services"
+        url="https://yourbimpartner.com/services"
+        structuredData={structuredData}
+      />
       {/* Breadcrumb Header */}
       <div className="bg-gray-100 py-10">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
@@ -78,7 +94,7 @@ const ServicesPage = () => {
                   <div className="relative overflow-hidden">
                     <img 
                       src={service.image} 
-                      alt={service.title}
+                      alt={`${service.title} - BIM Service`}
                       className="w-full h-64 object-cover transition-transform duration-300 hover:scale-110"
                     />
                     {/* <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-all duration-300"></div> */}

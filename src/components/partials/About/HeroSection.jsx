@@ -1,6 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
+import aboutus from "/public/aboutussidebar.jpg"
 // Hero Section Component
 const HeroSection = () => {
   const navigate=useNavigate()
@@ -43,7 +43,7 @@ Our core expertise lies in a wide array of services, including as-built surveys 
           {/* Right Image */}
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              src={aboutus}
               alt="Industrial Machinery"
               className="w-full h-96 object-cover rounded-lg shadow-2xl"
             />

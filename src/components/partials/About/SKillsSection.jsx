@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CountUp from "../../../Animations/CountUp";
-
+import Experties from '/public/Experties.jpg'
 // Skills Section Component
 const SkillsSection = () => {
   const [activeTab, setActiveTab] = useState('OUR SKILLS');
@@ -48,58 +48,16 @@ const SkillsSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Side - Illustration */}
           <div className="flex justify-center">
-            <div className="relative">
+            <div className="relative rounded-[30px]">
               {/* Target Icon */}
-              <div className="relative">
-                <svg width="300" height="300" viewBox="0 0 300 300" className="transform rotate-12">
-                  {/* Target circles */}
-                  <circle cx="200" cy="150" r="80" fill="none" stroke="#ef4444" strokeWidth="8" />
-                  <circle cx="200" cy="150" r="60" fill="none" stroke="#ef4444" strokeWidth="6" />
-                  <circle cx="200" cy="150" r="40" fill="none" stroke="#ef4444" strokeWidth="4" />
-                  <circle cx="200" cy="150" r="20" fill="#ef4444" />
-                  
-                  {/* Arrows */}
-                  <path d="M50 100 L180 130" stroke="#3b82f6" strokeWidth="4" fill="none" markerEnd="url(#arrowhead)" />
-                  <path d="M80 200 L170 170" stroke="#3b82f6" strokeWidth="4" fill="none" markerEnd="url(#arrowhead)" />
-                  <path d="M120 80 L185 120" stroke="#3b82f6" strokeWidth="4" fill="none" markerEnd="url(#arrowhead)" />
-                  <path d="M60 160 L170 155" stroke="#3b82f6" strokeWidth="4" fill="none" markerEnd="url(#arrowhead)" />
-                  
-                  {/* Arrow marker definition */}
-                  <defs>
-                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6" />
-                    </marker>
-                  </defs>
-                </svg>
-                
-                {/* Character */}
-                <div className="absolute -left-16 top-16">
-                  <div className="relative">
-                    {/* Head */}
-                    <div className="w-16 h-16 bg-yellow-300 rounded-full relative mb-2">
-                      <div className="absolute top-2 left-4 w-2 h-2 bg-black rounded-full"></div>
-                      <div className="absolute top-2 right-4 w-2 h-2 bg-black rounded-full"></div>
-                      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-4 h-1 bg-black rounded-full"></div>
-                    </div>
-                    
-                    {/* Body */}
-                    <div className="w-12 h-20 bg-red-500 rounded-lg mx-auto relative">
-                      {/* Arms */}
-                      <div className="absolute -left-4 top-2 w-8 h-3 bg-yellow-300 rounded-full transform rotate-45"></div>
-                      <div className="absolute -right-4 top-2 w-8 h-3 bg-yellow-300 rounded-full transform -rotate-12"></div>
-                    </div>
-                    
-                    {/* Legs */}
-                    <div className="flex justify-center gap-2 mt-1">
-                      <div className="w-3 h-12 bg-gray-600 rounded-full"></div>
-                      <div className="w-3 h-12 bg-gray-600 rounded-full"></div>
-                    </div>
-                    
-                    {/* Telescope */}
-                    <div className="absolute right-0 top-8 w-16 h-2 bg-gray-700 rounded-full transform rotate-12"></div>
-                  </div>
-                </div>
-              </div>
+              <div className="relative rounded-[30px]">
+               </div>
+              <img
+                src={Experties}
+                alt="Skills Illustration"
+                className="w-full h-96  shadow-2xl"
+                style={{borderRadius:"48% 52% 2% 98% / 100% 100% 0% 0% "}}
+              />
             </div>
           </div>
 

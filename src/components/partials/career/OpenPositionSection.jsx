@@ -91,8 +91,8 @@ const JobPosition = ({ position, isExpanded, onToggle }) => {
 
           {/* Contact Button */}
           <div className="mt-8 flex justify-end">
-            <button onClick={()=>navigate('/contact')} className="bg-orange-500 cursor-pointer hover:bg-orange-600 text-white px-8 py-3 rounded font-semibold transition-all transform hover:scale-105">
-              Contact Us Here
+            <button onClick={()=>navigate('/career#apply')} className="bg-orange-500 cursor-pointer hover:bg-orange-600 text-white px-8 py-3 rounded font-semibold transition-all transform hover:scale-105">
+              Apply  Here
             </button>
           </div>
         </div>

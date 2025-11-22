@@ -1,9 +1,33 @@
 import React from "react";
+import SEO from "../components/SEO";
 import { MapPin, Phone, Mail } from "lucide-react";
 
 const Contact = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Us",
+    "url": "https://yourbimpartner.com/contact-us",
+    "organization": {
+      "@type": "Organization",
+      "name": "Your BIM Partner",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "info@yourbimpartner.com"
+      }
+    }
+  };
+
   return (
     <div className="w-full">
+      <SEO
+        title="Contact Us - Your BIM Partner"
+        description="Get in touch with Your BIM Partner for BIM solutions, staffing, and training. Contact us for more information about our services."
+        keywords="contact BIM partner, BIM inquiry, construction services contact"
+        url="https://yourbimpartner.com/contact-us"
+        structuredData={structuredData}
+      />
       {/* Page Header */}
       <div className="bg-gray-100 py-10">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
@@ -15,7 +39,7 @@ const Contact = () => {
       </div>
 
       {/* Contact Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-4 py-16 grid grid-cols-2 lg:grid-cols-3 gap-12">
         {/* Left Form Section */}
         <div className="lg:col-span-2">
           <h2 className="text-2xl font-bold text-black mb-2">GET IN TOUCH</h2>

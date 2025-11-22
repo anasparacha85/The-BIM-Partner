@@ -3,6 +3,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from 'lucide-react';
+import SEO from '../components/SEO';
 import Navbar from '../components/common/Navbar';
 import WelcomeSection from '../components/partials/Home/WelcomeSection';
 import ServicesSection from '../components/partials/Home/ServiceSection';
@@ -11,10 +12,23 @@ import ProjectsSection from '../components/partials/Home/ProjectsSection';
 import QuoteRequestComponent from '../components/partials/Home/QuotesSection';
 import Testimonials from '../components/partials/Home/TestimonialsSection';
 import { useNavigate } from 'react-router-dom';
-
+import BIMImage from '/public/bim.jpg'
+import threeD from '/public/3DModeling.jpg'
+import fourD from '/public/4ddesign.jpg'
+import clashDetection from '/public/clashdetection.jpg'
 const Home1 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const navigate = useNavigate();
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Your BIM Partner",
+    "url": "https://yourbimpartner.com",
+    "description": "Professional BIM engineering, staffing solutions, and training for construction projects",
+    "image": "https://yourbimpartner.com/LOGO_The BIM Partner.jpg",
+    "priceRange": "$$"
+  };
 
   const heroSlides = [
     {
@@ -22,8 +36,7 @@ const Home1 = () => {
       subtitle: 'Smarter Construction',
       description:
         'We deliver advanced BIM solutions that enhance project efficiency, accuracy, and collaboration across all stakeholders — from concept to completion.',
-      image:
-        'https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image:BIMImage
     },
     {
       title: '3D Modeling & Visualization',
@@ -31,15 +44,14 @@ const Home1 = () => {
       description:
         'Transform ideas into intelligent 3D models that provide clear visualization, improved communication, and data-rich designs for better decision-making.',
       image:
-        'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-    },
+        threeD,},
     {
       title: 'Clash Detection & Coordination',
       subtitle: 'Reduce Risks',
       description:
         'Identify and resolve design conflicts before construction begins. Our BIM clash detection ensures smooth project execution and reduces costly errors.',
       image:
-        'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2076&q=80',
+        clashDetection
     },
     {
       title: '4D & 5D BIM',
@@ -47,16 +59,8 @@ const Home1 = () => {
       description:
         'Integrate project scheduling (4D) and cost estimation (5D) with BIM models to ensure projects are delivered on time and within budget.',
       image:
-        'https://images.unsplash.com/photo-1503389152951-9f343605f61e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-    },
-    {
-      title: 'Digital Twin & Facility Management',
-      subtitle: 'Beyond Construction',
-      description:
-        'Leverage digital twin technology for lifecycle management. From maintenance to asset management, BIM extends value long after construction.',
-      image:
-        'https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-    },
+fourD    },
+   
   ];
 
   // Auto-slide functionality
@@ -78,6 +82,13 @@ const Home1 = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
+      <SEO 
+        title="Your BIM Partner - Professional BIM Engineering & Solutions"
+        description="Professional BIM engineering services, staffing solutions, and training. Your BIM Partner delivers advanced Building Information Modeling for construction success."
+        keywords="BIM services, BIM engineering, BIM modeling, construction technology, BIM solutions"
+        url="https://yourbimpartner.com"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <div className="relative h-[80vh] overflow-hidden">
         {/* Background Image with Overlay */}
@@ -91,8 +102,8 @@ const Home1 = () => {
             >
               <img
                 src={slide.image}
-                alt=""
-                className="w-full h-full object-cover"
+                alt={slide.title}
+                className="w-full h-full object-fit"
               />
               <div className="absolute inset-0 bg-black/60"></div>
             </div>
@@ -139,7 +150,7 @@ const Home1 = () => {
                         {slide.description}
                       </p>
                       <button
-                        onClick={() => navigate('/contact')}
+                        onClick={() => navigate('/contact-us')}
                         className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded text-lg font-semibold transition-all transform hover:scale-105 animate-fade-in-up animation-delay-600"
                       >
                         CONTACT US

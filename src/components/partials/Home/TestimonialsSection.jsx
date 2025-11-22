@@ -131,7 +131,7 @@ const testimonials = [
           <p className="text-orange-100 mb-8 leading-relaxed">
             My job is to help professionals to achieve their industrial goals whilst having adequate protection.
           </p>
-          <button onClick={()=>navigate('/contact')} className="bg-white text-orange-500 font-semibold px-8 py-3 rounded hover:bg-gray-100 transition-colors">
+          <button onClick={()=>navigate('/contact-us')} className="bg-white text-orange-500 font-semibold px-8 py-3 rounded hover:bg-gray-100 transition-colors">
             CONTACT NOW
           </button>
         </div>

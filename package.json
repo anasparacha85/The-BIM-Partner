@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:analyze": "vite build && echo 'Build complete! Bundle sizes shown above.'"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
@@ -15,6 +16,7 @@
     "lucide-react": "^0.544.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
     "react-router-dom": "^7.9.3",
     "recharts": "^3.2.1",
     "swiper": "^12.0.2",
@@ -31,6 +33,7 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
+    "terser": "^5.44.1",
     "vite": "^5.4.1"
   }
 }

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://yourbimpartner.com/sitemap.xml
+Host: https://yourbimpartner.com

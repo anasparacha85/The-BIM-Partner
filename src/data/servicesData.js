@@ -1,10 +1,10 @@
 // src/data/servicesData.js
-import VirtualDesign from '/public/VirtualDesignService.jpg'
+import VirtualDesign from '/public/VirtualDesign.jpg'
 import BIMModeling from '/public/BIMEngineeringModeling.jpg'
 import ScanToBim from '/public/ScanToBIMServices.jpg'
 import BIMProjectManagement from '/public/BIMProjectManagementServices.jpg'
 import BIMSecondment from '/public/BIMSecondmentServices.jpg'
-import BIM4DService from '/public/4DBIMService.jpg'
+import BIM4DService from '/public/4ddesign.jpg'
 const services = [
   {
     id: 1,

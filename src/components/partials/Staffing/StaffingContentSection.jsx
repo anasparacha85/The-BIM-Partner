@@ -196,7 +196,7 @@ const StaffingContentSection = () => {
               <p className="mb-6 leading-relaxed">
                 My job is to help professionals achieve their industrial goals whilst having adequate protection along the way.
               </p>
-              <button onClick={()=>navigate('/contact')} className="w-full bg-white text-orange-600 px-6 py-3 rounded font-bold hover:bg-gray-100 transition-all transform hover:scale-105">
+              <button onClick={()=>navigate('/contact-us')} className="w-full bg-white text-orange-600 px-6 py-3 rounded font-bold hover:bg-gray-100 transition-all transform hover:scale-105">
                 CONTACT NOW
               </button>
             </div>

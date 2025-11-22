@@ -3,10 +3,26 @@ import { useParams, NavLink } from "react-router-dom";
 import { ChevronRight, ChevronDown, Star, FileText, ArrowLeft } from "lucide-react";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import services from "../data/servicesData";
+import SEO from "../components/SEO";
 
 export default function ServiceDetails() {
   const { slug } = useParams();
   const service = services.find((s) => s.slug === slug);
+
+  // structured data and meta
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": service?.title || 'BIM Service',
+    "description": service?.description || service?.fullDescription || 'BIM service by Your BIM Partner',
+    "provider": {
+      "@type": "Organization",
+      "name": "Your BIM Partner",
+      "url": "https://yourbimpartner.com"
+    },
+    "url": `https://yourbimpartner.com/services/${slug}`,
+    "image": service?.image || 'https://yourbimpartner.com/LOGO_The BIM Partner.jpg'
+  };
 
   const [expandedFAQ, setExpandedFAQ] = useState(null);
   const toggleFAQ = (index) => setExpandedFAQ(expandedFAQ === index ? null : index);
@@ -19,6 +35,14 @@ export default function ServiceDetails() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO
+        title={`${service.title} | Your BIM Partner`}
+        description={service.description || service.fullDescription?.slice(0, 160)}
+        keywords={`${service.title}, BIM service, BIM solutions`}
+        url={`https://yourbimpartner.com/services/${slug}`}
+        image={service.image}
+        structuredData={structuredData}
+      />
       {/* Header */}
       <div className="bg-gray-100 py-10">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">

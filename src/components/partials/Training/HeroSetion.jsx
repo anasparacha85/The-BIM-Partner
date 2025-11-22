@@ -48,7 +48,7 @@ const BIMHeroSection = () => {
               <div className="flex flex-wrap gap-4">
                 <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded font-semibold flex items-center gap-2 transition-all transform hover:scale-105">
                   <Phone className="w-5 h-5" />
-                  +971 58 103 6887
+                   +91-7022894585
                 </button>
                 <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded font-semibold flex items-center gap-2 transition-all transform hover:scale-105">
                   <MessageCircle className="w-5 h-5" />
