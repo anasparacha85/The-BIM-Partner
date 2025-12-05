@@ -7,11 +7,11 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "Our Services", path: "/services" },
   { name: "Career", path: "/career" },
-  { name: "Contact Us", path: "/contact" },
+  { name: "Contact Us", path: "/contact-us" },
   { name: "Blogs", path: "/blogs" },
-  { name: "About Us", path: "/about" },
-  { name: "BIM Training", path: "/training" },
-  { name: "BIM Staffing", path: "/staffing" },
+  { name: "About Us", path: "/about-us" },
+  { name: "BIM Training", path: "/bim-training" },
+  { name: "BIM Staffing", path: "/bim-staffing" },
 ];
 
 export default function Footer() {

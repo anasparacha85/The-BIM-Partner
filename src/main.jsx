@@ -36,7 +36,7 @@ const router=createBrowserRouter(
           <Route path="/blogs/:slug" element={<Suspense fallback={<LoadingFallback />}><Blogs /></Suspense>} />
         {/* default route */}
         <Route path="/blogs" element={<Suspense fallback={<LoadingFallback />}><Blogs /></Suspense>} />
-          <Route path='/about' element={<AboutUsPage/>}/>
+          <Route path='/about-us' element={<AboutUsPage/>}/>
             <Route path='/bim-training' element={<Suspense fallback={<LoadingFallback />}><BimTraining/></Suspense>}/>
                <Route path='/bim-staffing' element={<Suspense fallback={<LoadingFallback />}><BIMStaffingPage/></Suspense>}/>
               <Route path='/career' element={<Suspense fallback={<LoadingFallback />}><CareerPage/></Suspense>}/>

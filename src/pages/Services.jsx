@@ -128,7 +128,7 @@ const ServicesPage = () => {
                   My job is to help professionals to achieve their industrial goals 
                   whilst having adequate protection along the way.
                 </p>
-                <button onClick={()=>navigate('/contact')} className="bg-white cursor-pointer text-orange-500 px-8 py-3 rounded font-bold hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105">
+                <button onClick={()=>navigate('/contact-us')} className="bg-white cursor-pointer text-orange-500 px-8 py-3 rounded font-bold hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105">
                   CONTACT NOW
                 </button>
               </div>

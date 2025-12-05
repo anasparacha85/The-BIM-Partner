@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams, NavLink } from "react-router-dom";
+import { useParams, NavLink, useNavigate } from "react-router-dom";
 import { ChevronRight, ChevronDown, Star, FileText, ArrowLeft } from "lucide-react";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import services from "../data/servicesData";
@@ -8,7 +8,7 @@ import SEO from "../components/SEO";
 export default function ServiceDetails() {
   const { slug } = useParams();
   const service = services.find((s) => s.slug === slug);
-
+  const navigate=useNavigate()
   // structured data and meta
   const structuredData = {
     "@context": "https://schema.org",
@@ -199,7 +199,7 @@ export default function ServiceDetails() {
                   My job is to help professionals to achieve their industrial goals 
                   whilst having adequate protection along the way.
                 </p>
-                <button className="bg-white text-orange-500 px-8 py-3 rounded font-bold hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105">
+                <button onClick={()=>navigate('/contact-us')} className="bg-white text-orange-500 px-8 py-3 rounded font-bold hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105">
                   CONTACT NOW
                 </button>
               </div>

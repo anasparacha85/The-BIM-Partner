@@ -44,10 +44,10 @@ const SkillsSection = () => {
 
   return (
     <div className="bg-gray-100 py-20">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-2">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Side - Illustration */}
-          <div className="flex justify-center">
+          <div className="flex justify-justify-start">
             <div className="relative rounded-[30px]">
               {/* Target Icon */}
               <div className="relative rounded-[30px]">
@@ -55,8 +55,8 @@ const SkillsSection = () => {
               <img
                 src={Experties}
                 alt="Skills Illustration"
-                className="w-full h-96  shadow-2xl"
-                style={{borderRadius:"48% 52% 2% 98% / 100% 100% 0% 0% "}}
+                className="w-full   shadow-2xl rounded-[30px] "
+                // style={{borderRadius:"0% 100% 100% 0% / 0% 0% 100% 100%   "}}
               />
             </div>
           </div>

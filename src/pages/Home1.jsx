@@ -79,6 +79,8 @@ fourD    },
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
   };
+  console.log(window.innerHeight*0.8);
+  
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -90,7 +92,7 @@ fourD    },
         structuredData={structuredData}
       />
       {/* Hero Section */}
-      <div className="relative h-[80vh] overflow-hidden">
+      <div className="relative  h-[80vh] bg-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="relative w-full h-full">
           {heroSlides.map((slide, index) => (
@@ -103,7 +105,7 @@ fourD    },
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-full object-fit"
+                className="w-full h-[100%] "
               />
               <div className="absolute inset-0 bg-black/60"></div>
             </div>

@@ -5,7 +5,7 @@ import TheBIMPartner from "/public/LOGO_The BIM Partner.jpg";
 
 const navLinks = [
   { name: "Home", path: "/" },
-  { name: "About Us", path: "/about" },
+  { name: "About Us", path: "/about-us" },
    { name: "BIM Training", path: "/bim-training" },
   { name: "BIM Staffing", path: "/bim-staffing" },
   {
